@@ -3,4 +3,11 @@
 
 def key_for_min_value(name_hash)
 
+def key_for_min_value(hash)
+  min_value = hash.min_by {|k,v| v}
+  unless min_value == nil 
+    min_value.first 
+  end
+  
+end
 end
